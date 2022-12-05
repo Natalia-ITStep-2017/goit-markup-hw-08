@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title lang="en">WebStudio</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+    integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+    crossorigin="anonymous" referrerpolicy="no-referrer">
+  <link rel="stylesheet" href="./css/main.min.css">
+</head>
+
+<body>
+  <header class="header">
+    <div class="container">
+      <nav class="nav">
+        <a href="./index.html" lang="en" class="logo link">Web<span class="logo--light-theam">Studio</span>
+        </a>
+        <button class="nav__btn js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+          <svg class="nav__icon" width="40" height="40">
+            <use href="./images/sprite.svg#icon-menu"></use>
+          </svg>
+        </button>
+        <ul class="nav__site list">
+          <li class="nav__item"><a href="./index.html" class="nav__link link nav__link--current">Студія</a></li>
+          <li class="nav__item"><a href="./portfolio.html" class="nav__link link">Портфоліо</a></li>
+          <li class="nav__item"><a href="" class="nav__link link">Контакти</a></li>
+        </ul>
+      </nav>
+      <ul class="contact list">
+        <li class="contact__item"><a href="mailto:info@devstudio.com" class="header__contact link" lang="en">
+            <svg width="16" height="12" class="contact__icon">
+              <use href="./images/sprite.svg#icon-envelope"></use>
+            </svg>
+            <div>info@devstudio.com</div>
+          </a></li>
+        <li class="contact__item"><a href="tel:+3809611111111" class="header__contact link">
+            <svg class="contact__icon contact__icon--phone">
+              <use href="./images/sprite.svg#icon-smartphone"></use>
+            </svg>
+            <div>+38 096 111 11 11</div>
+          </a></li>
+      </ul>
+    </div>
+  </header>
+  <main>
+    <section class="section">
+      <div class="container">
+        <!-- --------- Filter block --------- -->
+        <h1 class="visually-hidden">Роботи веб-студії</h1>
+        <ul class="filter list">
+          <li class="filter__item"><button type="button" class="filter__btn btn">Усі</button></li>
+          <li class="filter__item"><button type="button" class="filter__btn btn">Веб-сайти</button></li>
+          <li class="filter__item"><button type="button" class="filter__btn btn">Додатки</button></li>
+          <li class="filter__item"><button type="button" class="filter__btn btn">Дизайн</button></li>
+          <li class="filter__item"><button type="button" class="filter__btn btn">Маркетинг</button></li>
+        </ul>
+        <!-- -------- Projects block --------- -->
+        <ul class="project list">
+          <li class="project__item">
+            <a href="" class="project__link">
+              <div class="project__description"><img src="./images/site1.jpg" alt="Фото проекта" width="370"
+                  height="294">
+                <div class="project__overlay">
+                  <p class="project__overlay-text">
+                    Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
+                    Все це дозволить відвідувачу отримати
+                    вичерпні відомості про компанію чи приватну особу.</p>
+                </div>
+              </div>
+              <div class="project__caption">
+                <h2 class="project__name">Технокряк</h2>
+                <p class="project__type">Веб-сайт</p>
+              </div>
+            </a>
+          </li>
+          <li class="project__item">
+            <a href="" class="project__link">
+              <div class="project__description">
+                <img src="./images/design1.jpg" alt="Фото проекта" width="370" height="294">
+                <div class="project__overlay">
+                  <p class="project__overlay-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ea
+                    architecto minima
+                    laborum sed facere, ducimus, alias est quisquam, nostrum quibusdam asperiores! Assumenda officii.
+                  </p>
+                </div>
+              </div>
+
+              <div class="project__caption">
+                <h2 class="project__name">Постер <span lang="en">New Orlean vs Golden Star</span></h2>
+                <p class="project__type">Дизайн</p>
+              </div>
+            </a>
+          </li>
+          <li class="project__item">
+            <a href="" class="project__link">
+              <div class="project__description"><img src="./images/app1.jpg" alt="Фото проекта" width="370"
+                  height="294">
+                <div class="project__overlay">
+                  <p class="project__overlay-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ea
+                    architecto minima
+                    laborum sed facere, ducimus, alias est quisquam, nostrum quibusdam asperiores! Assumenda officiis.
+                  </p>
+                </div>
+              </div>
+              <div class="project__caption">
+                <h2 class="project__name">Ресторан <span lang="en">Seafood</span></h2>
+                <p class="project__type">Додаток</p>
+              </div>
+            </a>
+          </li>
+          <li class="project__item">
+            <a href="" class="project__link">
+              <div class="project__description"><img src="./images/marketing1.jpg" alt="Фото проекта" width="370"
+                  height="294">
+                <div class="project__overlay">
+                  <p class="project__overlay-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ea
+                    architecto minima
+                    laborum sed facere, ducimus, alias est quisquam, nostrum quibusdam asperiores! Assumenda officiis.
+                  </p>
+                </div>
+              </div>
+              <div class="project__caption">
+                <h2 class="project__name">Проєкт <span lang="en">Prime</span></h2>
+                <p class="project__type">Маркетинг</p>
+              </div>
+            </a>
+          </li>
+          <li class="project__item">
+            <a href="" class="project__link">
+              <div class="project__description"><img src="./images/app2.jpg" alt="Фото проекта" width="370"
+                  height="294">
+                <div class="project__overlay">
+                  <p class="project__overlay-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ea
+                    architecto minima
+                    laborum sed facere, ducimus, alias est quisquam, nostrum quibusdam asperiores! Assumenda officiis.
+                  </p>
+                </div>
+              </div>
+              <div class="project__caption">
+                <h2 class="project__name">Проєкт <span lang="en">Boxes</span></h2>
+                <p class="project__type">Додаток</p>
+              </div>
+            </a>
+          </li>
+          <li class="project__item">
+            <a href="" class="project__link">
+              <div class="project__description"><img src="./images/site2.jpg" alt="Фото проекта" width="370"
+                  height="294">
+                <div class="project__overlay">
+                  <p class="project__overlay-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ea
+                    architecto minima
+                    laborum sed facere, ducimus, alias est quisquam, nostrum quibusdam asperiores! Assumenda officiis.
+                  </p>
+                </div>
+              </div>
+              <div class="project__caption">
+                <h2 lang="en" class="project__name">Inspiration has no Borders</h2>
+                <p class="project__type">Веб-сайт</p>
+              </div>
+            </a>
+          </li>
+          <li class="project__item">
+            <a href="" class="project__link">
+              <div class="project__description"><img src="./images/design2.jpg" alt="Фото проекта" width="370"
+                  height="294">
+                <div class="project__overlay">
+                  <p class="project__overlay-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ea
+                    architecto minima
+                    laborum sed facere, ducimus, alias est quisquam, nostrum quibusdam asperiores! Assumenda officiis.
+                  </p>
+                </div>
+              </div>
+              <div class="project__caption">
+                <h2 class="project__name">Видання <span lang="en">Limited Edition</span></h2>
+                <p class="project__type">Дизайн</p>
+              </div>
+            </a>
+          </li>
+          <li class="project__item">
+            <a href="" class="project__link">
+              <div class="project__description"><img src="./images/marketing2.jpg" alt="Фото проекта" width="370"
+                  height="294">
+                <div class="project__overlay">
+                  <p class="project__overlay-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ea
+                    architecto minima
+                    laborum sed facere, ducimus, alias est quisquam, nostrum quibusdam asperiores! Assumenda officiis.
+                  </p>
+                </div>
+              </div>
+              <div class="project__caption">
+                <h2 class="project__name">Проєкт <span lang="en">LAB</span></h2>
+                <p class="project__type">Маркетинг</p>
+              </div>
+            </a>
+          </li>
+          <li class="project__item">
+            <a href="" class="project__link">
+              <div class="project__description"><img src="./images/app3.jpg" alt="Фото проекта" width="370"
+                  height="294">
+                <div class="project__overlay">
+                  <p class="project__overlay-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ea
+                    architecto minima
+                    laborum sed facere, ducimus, alias est quisquam, nostrum quibusdam asperiores! Assumenda officiis.
+                  </p>
+                </div>
+              </div>
+              <div class="project__caption">
+                <h2 lang="en" class="project__name">Growing Business</h2>
+                <p class="project__type">Додаток</p>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="footer__container container">
+      <!--  Contacts block -->
+      <div>
+        <a href="./index.html" lang="en" class="logo footer__logo link">Web<span
+            class="logo--dark-theam">Studio</span></a>
+        <address class="footer-contact">
+          <ul class="list">
+            <li class="footer-contact__list-item"><a href="https://goo.gl/maps/F1p9D5CqtJAEcdc1A" target="_blank"
+                rel="noopener noreferrer nofollow" class="footer-contact__item-address link">м. Київ, пр-т Лесі
+                Українки, 26</a></li>
+            <li class="footer-contact__list-item"><a href="mailto:info@devstudio.com"
+                class="footer-contact__item link">info@devstudio.com</a></li>
+            <li class="footer-contact__list-item"><a href="tel:+3809611111111" class="footer-contact__item link">+38 096
+                111 11 11</a></li>
+          </ul>
+        </address>
+      </div>
+      <!--  Socialnets block -->
+      <div class="footer__socialnet">
+        <h3 class="subtitle footer__subtitle">приєднуйтесь</h3>
+        <ul class="socialnet list">
+          <li><a class="socialnet__link socialnet__link--dark-theam link" href="https://www.instagram.com"
+              target="_blank" rel="noopener noreferrer nofollow" aria-label="іконка 'instagram'">
+              <svg width="20" height="20" class="socialnet__icon">
+                <use href="./images/sprite.svg#icon-instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li><a class="socialnet__link socialnet__link--dark-theam link" href="https://www.twitter.com" target="_blank"
+              rel="noopener noreferrer nofollow" aria-label="іконка 'twitter'">
+              <svg width="20" height="20" class="socialnet__icon">
+                <use href="./images/sprite.svg#icon-twitter"></use>
+              </svg>
+            </a>
+          </li>
+          <li><a class="socialnet__link socialnet__link--dark-theam link" href="https://www.facebook.com"
+              target="_blank" rel="noopener noreferrer nofollow" aria-label="іконка 'facebook'">
+              <svg width="20" height="20" class="socialnet__icon">
+                <use href="./images/sprite.svg#icon-facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li><a class="socialnet__link socialnet__link--dark-theam link" href="https://www.linkedin.com"
+              target="_blank" rel="noopener noreferrer nofollow" aria-label="іконка 'linkedin'">
+              <svg width="20" height="20" class="socialnet__icon">
+                <use href="./images/sprite.svg#icon-linkedin"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <!-- Subscribe block -->
+      <div>
+        <h3 class="subtitle footer__subtitle">Підпишіться на розсилку</h3>
+        <form class="subscribe">
+          <label class="subscribe__email-label">
+            <input class="subscribe__email-field" name="email" type="email" placeholder="E-mail" required>
+          </label>
+          <button class="order-btn subscribe__order-btn btn" type="submit">Підписатися
+            <svg class="subscribe__icon" width="24" height="24">
+              <use href="./images/sprite.svg#icon-send"></use>
+            </svg>
+          </button>
+        </form>
+      </div>
+    </div>
+  </footer>
+  <!--  ===== Mobile Menu ===== -->
+  <div class="menu__container js-menu-container" id="mobile-menu">
+    <button class="nav__btn js-close-menu">
+      <svg class="nav__icon" width="40" height="40">
+        <use href="./images/sprite.svg#icon-closebtn"></use>
+      </svg>
+    </button>
+
+    <ul class="mobile-menu list">
+      <li class="mobile-menu__item"><a href="./index.html" class="mobile-menu__link link nav__link--current">Студія</a>
+      </li>
+      <li class="mobile-menu__item"><a href="./portfolio.html" class="mobile-menu__link link">Портфоліо</a></li>
+      <li class="mobile-menu__item"><a href="" class="mobile-menu__link link">Контакти</a></li>
+    </ul>
+    <div>
+      <ul class="mobile-menu__contact list">
+        <li class="mobile-menu__phone"><a href="tel:+3809611111111" class="header__contact link">
+            +38 096 111 11 11
+          </a></li>
+        <li class="mobile-menu__email"><a href="mailto:info@devstudio.com" class="header__contact link" lang="en">
+            info@devstudio.com
+          </a></li>
+      </ul>
+      <ul class="mobile-menu__social list">
+        <li class="mobile-menu__social-item">
+          <a class="mobile-menu__soclink link" href="https://www.instagram.com" target="_blank"
+            rel="noopener noreferrer nofollow">Instagram
+          </a>
+        </li>
+        <li class="mobile-menu__social-item">
+          <a class="mobile-menu__soclink link" href="https://www.twitter.com" target="_blank"
+            rel="noopener noreferrer nofollow">Twitter</a>
+        </li>
+        <li class="mobile-menu__social-item">
+          <a class="mobile-menu__soclink link" href="https://www.facebook.com" target="_blank"
+            rel="noopener noreferrer nofollow">Facebook</a>
+        </li>
+        <li class="mobile-menu__social-item">
+          <a class="mobile-menu__soclink link" href="https://www.linkedin.com" target="_blank"
+            rel="noopener noreferrer nofollow">LinkedIn</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+    integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+    crossorigin="anonymous"></script>
+  <script defer src="./js/mobile-menu.js"></script>
+</body>
+
+</html>
