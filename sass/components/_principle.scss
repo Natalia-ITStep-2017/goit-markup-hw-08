@@ -1,0 +1,36 @@
+.principle {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 30px;
+}
+
+.principle__item {
+	flex-basis: calc((100% - (30px * (4 - 1))) / 4);
+}
+
+.principle__icon {
+	height: 120px;
+	background: var(--background-grey);
+	border-radius: 4px;
+	padding-block: 25px;
+	margin-bottom: 30px;
+
+	@media screen and (max-width: 767px) {
+		min-width: 450px;
+	}
+
+	@media screen and (min-width: 768px) {
+		min-width: 354px;
+	}
+
+	@media screen and (min-width: 1200px) {
+		min-width: 270px;
+	}
+}
+
+.principle__text {
+	line-height: 1.71;
+	color: var(--text-color);
+	letter-spacing: 0.03em;
+}

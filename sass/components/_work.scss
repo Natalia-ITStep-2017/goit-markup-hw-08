@@ -1,0 +1,16 @@
+.work__list {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 30px;
+}
+
+.work__item {
+	position: relative;
+}
+
+.work {
+	padding-top: 0;
+	@media screen and (max-width: 1200px) {
+		display: none;
+	}
+}

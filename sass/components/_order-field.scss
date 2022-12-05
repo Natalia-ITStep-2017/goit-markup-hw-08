@@ -1,0 +1,43 @@
+.order__label {
+	display: block;
+	margin-bottom: 4px;
+}
+
+.order__field {
+	position: relative;
+	margin-bottom: 10px;
+}
+
+.order__input {
+	height: 40px;
+	padding-left: 42px;
+	padding-right: 12px;
+
+	line-height: calc(16 / 14);
+	color: var(--title-color);
+	letter-spacing: inherit;
+
+	width: 100%;
+	border: 1px solid rgba(33, 33, 33, 0.2);
+	border-radius: 4px;
+	outline: unset;
+
+	transition: border-color var(--transition-duration-timing);
+
+	&:focus {
+		border-color: var(--accent-color);
+	}
+
+	&:focus + .order__icon {
+		fill: var(--accent-color);
+	}
+}
+
+.order__icon {
+	position: absolute;
+	left: 12px;
+	top: 50%;
+	transform: translateY(-50%);
+	fill: var(--title-color);
+	transition: fill var(--transition-duration-timing);
+}
