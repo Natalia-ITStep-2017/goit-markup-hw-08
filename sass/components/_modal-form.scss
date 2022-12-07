@@ -4,8 +4,12 @@
 }
 
 .modal {
-	width: 450px;
-	min-height: 609px;
+	width: 100%;
+
+	@media screen and (min-width: 1200px) {
+		width: 450px;
+		min-height: 609px;
+	}
 
 	@media screen and (min-width: 1200px) {
 		width: 528px;

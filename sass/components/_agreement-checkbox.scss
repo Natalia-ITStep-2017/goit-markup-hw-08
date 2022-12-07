@@ -11,6 +11,10 @@
 
 	user-select: none;
 
+	@media screen and (max-width: 480px) {
+		display: block;
+	}
+
 	@media screen and (min-width: 1200px) {
 		font-size: 14px;
 		line-height: calc(24 / 14);
@@ -43,4 +47,8 @@
 	margin-left: 4px;
 	color: var(--accent-color);
 	text-decoration-line: underline;
+	// 	@media screen and (min-width: 1200px) {
+	// 	font-size: 14px;
+	// 	line-height: calc(24 / 14);
+	// }
 }
